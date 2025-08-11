@@ -5,3 +5,17 @@ function sum(a, b) {
 
 let result = sum(4, 6);
 console.log("sum is: ", result);
+
+//concatenation
+
+let a = "12";
+let b = 13;
+console.log("concatenation: ", a + b); // + is also used for concat
+console.log("type will be : - ", typeof (a + b));
+
+//basic understanding
+a = 10;
+b = 20;
+
+console.log("Hello, Prime " + a + b); ///will print string===> Hello, Prime 1020
+console.log(a + b + " Hello, Prime"); // will prime number + string = string
