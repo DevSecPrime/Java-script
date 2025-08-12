@@ -126,3 +126,37 @@ console.log("x != z:", x != z);
 // Checks BOTH value and type without type conversion
 console.log("x !== z:", x !== z);
 // true → Values are equal but types are different (number vs string)
+
+console.log("\n===== LOGICAL OPERATORS =====");
+// Logical operators work with boolean values (true/false)
+
+// Example booleans
+let a = true;
+let b = false;
+
+// ------------------------
+// Logical AND (&&)
+// ------------------------
+// true only if BOTH are true
+console.log("a && b =", a && b);
+// false → one is false
+console.log("x > 5 && y > 15 =", x > 5 && y > 15);
+// true → both conditions true
+
+// ------------------------
+// Logical OR (||)
+// ------------------------
+// true if AT LEAST one is true
+console.log("a || b =", a || b);
+// true → one is true
+console.log("x > 15 || y > 15 =", x > 15 || y > 15);
+// true → second condition is true
+
+// ------------------------
+// Logical NOT (!)
+// ------------------------
+// Flips true → false, false → true
+console.log("!a =", !a);
+// false → a was true
+console.log("!(x > y) =", !(x > y));
+// true → x > y was false, so negating gives true
