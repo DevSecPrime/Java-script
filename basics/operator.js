@@ -160,3 +160,13 @@ console.log("!a =", !a);
 // false → a was true
 console.log("!(x > y) =", !(x > y));
 // true → x > y was false, so negating gives true
+
+//Unary operator
+console.log("-----Unary operator------");
+a = 11;
+b = 22;
+
+c = a + b + a++ + b++ + ++a + ++b;
+console.log("a = ", a);
+console.log("b = ", b);
+console.log("c = ", c);
