@@ -55,8 +55,8 @@ console.log("Math.abs(-5) =", Math.abs(-5)); // → 5
 console.log("Math.abs(0) =", Math.abs(0)); // → 0
 
 // Example: Difference between two numbers (always positive)
-let x = 7,
-  y = 10;
+let x = 7;
+let y = 10;
 console.log("Absolute difference:", Math.abs(x - y)); // → 3
 
 // ===============================
@@ -67,3 +67,62 @@ console.log("Math.ceil(4.1) =", Math.ceil(4.1)); // → 5
 console.log("Math.ceil(4.9) =", Math.ceil(4.9)); // → 5
 console.log("Math.ceil(-4.1) =", Math.ceil(-4.1)); // → -4 (less negative)
 console.log("Math.ceil(-4.9) =", Math.ceil(-4.9)); // → -4 (moves towards zero)
+
+// RELATIONAL OPERATORS IN JAVASCRIPT
+// These operators compare values and return a boolean (true/false).
+
+x = 10;
+y = 20;
+let z = "10"; // z is a string, not a number
+
+// ------------------------
+// Greater than ( > )
+// ------------------------
+console.log("x > y:", x > y);
+// false → 10 is NOT greater than 20
+
+// ------------------------
+// Less than ( < )
+// ------------------------
+console.log("x < y:", x < y);
+// true → 10 is less than 20
+
+// ------------------------
+// Greater than or equal to ( >= )
+// ------------------------
+console.log("x >= 10:", x >= 10);
+// true → 10 is equal to 10, so condition is satisfied
+
+// ------------------------
+// Less than or equal to ( <= )
+// ------------------------
+console.log("y <= 15:", y <= 15);
+// false → 20 is NOT less than or equal to 15
+
+// ------------------------
+// Equal (loose) ==
+// ------------------------
+// Performs type conversion if needed ('10' → 10 before comparing)
+console.log("x == z:", x == z);
+// true → '10' (string) is converted to 10 (number)
+
+// ------------------------
+// Equal (strict) ===
+// ------------------------
+// Checks BOTH value and type — no type conversion
+console.log("x === z:", x === z);
+// false → 10 (number) is NOT the same type as '10' (string)
+
+// ------------------------
+// Not equal (loose) !=
+// ------------------------
+// Performs type conversion before comparing
+console.log("x != z:", x != z);
+// false → After converting '10' to number, 10 == 10
+
+// ------------------------
+// Not equal (strict) !==
+// ------------------------
+// Checks BOTH value and type without type conversion
+console.log("x !== z:", x !== z);
+// true → Values are equal but types are different (number vs string)
