@@ -9,11 +9,13 @@ else if (amount > 7000 && amount <= 9000) discount = 10;
 else if (amount > 9000) discount = 20;
 else console.log("Don't enter negative input");
 
-console.log("Total amount is: ", amount);
-console.log("Discount you got: " + discount + "%");
+if (typeof amount === "number") {
+  console.log("Total amount is: ", amount);
+  console.log("Discount you got: " + discount + "%");
 
-const discountAmount = Math.floor((discount * amount) / 100);
+  const discountAmount = Math.floor((discount * amount) / 100);
 
-console.log("Discount amount: ", discountAmount);
-const payableAmount = amount - discountAmount;
-console.log("Payable amount is: ", payableAmount);
+  console.log("Discount amount: ", discountAmount);
+  const payableAmount = amount - discountAmount;
+  console.log("Payable amount is: ", payableAmount);
+}
