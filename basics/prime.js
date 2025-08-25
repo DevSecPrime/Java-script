@@ -25,6 +25,7 @@ if ([null, "null", "", "undefined"].includes(input)) {
 }
 
 //Special method --- time complexity o(n/2)
+//37 ---> sqrt 6.087 --> 6 , 1,2,3,4,5,6,
 function checkPrime(n) {
   if (n <= 1) return false;
   if (n === 2) return true;
